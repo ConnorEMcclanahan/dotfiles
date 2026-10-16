@@ -1,0 +1,6 @@
+com.discordapp.Discord
+com.ktechpit.whatsie
+com.spotify.Client
+com.valvesoftware.Steam
+dev.zed.Zed
+io.gitlab.librewolf-community

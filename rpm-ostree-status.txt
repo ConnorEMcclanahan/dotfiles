@@ -1,0 +1,13 @@
+State: idle
+Deployments:
+● fedora:fedora/44/x86_64/sericea
+                  Version: 44.1.7 (2026-04-22T13:26:05Z)
+               BaseCommit: 6618725a29248785d4eceeaeefd8920b35862f15bd74d393856039c34f043e9a
+             GPGSignature: Valid signature by 36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6
+          LayeredPackages: alacritty btop cliphist distrobox fuzzel git micro pamixer
+
+  fedora:fedora/44/x86_64/sericea
+                  Version: 44.1.7 (2026-04-22T13:26:05Z)
+               BaseCommit: 6618725a29248785d4eceeaeefd8920b35862f15bd74d393856039c34f043e9a
+             GPGSignature: Valid signature by 36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6
+          LayeredPackages: cliphist fuzzel git pamixer
