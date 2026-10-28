@@ -1,6 +1,12 @@
 window {
-    background-image: linear-gradient(rgba(17, 17, 27, 0.45), rgba(17, 17, 27, 0.45)), url("/home/connor/Pictures/wallpapers/background.jpg");
+    background-image: url("/home/connor/Pictures/wallpapers/background.jpg");
     background-size: cover;
+}
+
+#time-box {
+    background-color: rgba(17, 17, 27, 0.45);
+    border-radius: 16px;
+    padding: 24px 48px;
 }
 
 /* The rectangular password input box */
@@ -17,4 +23,17 @@ entry {
 entry.error {
     border-color: #f38ba8;
     background-color: rgba(243, 139, 168, 0.2);
+}
+
+/* Unlock button matching the design */
+button {
+    background-color: rgba(17, 17, 27, 0.9);
+    border: 2px solid #89b4fa;
+    border-radius: 8px;
+    color: #cdd6f4;
+    padding: 8px 20px;
+}
+
+button:hover {
+    background-color: rgba(137, 180, 250, 0.25);
 }
