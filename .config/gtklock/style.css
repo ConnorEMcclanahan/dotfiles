@@ -1,5 +1,5 @@
 window {
-    background-image: url("/home/connor/Pictures/wallpapers/background.jpg");
+    background-image: linear-gradient(rgba(17, 17, 27, 0.45), rgba(17, 17, 27, 0.45)), url("/home/connor/Pictures/wallpapers/background.jpg");
     background-size: cover;
 }
 

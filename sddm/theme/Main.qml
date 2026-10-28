@@ -251,8 +251,8 @@ Pane {
             id: blur
             height: parent.height
             width: config.FullBlur == "true" ? parent.width : form.width
-            color: "#000000"
-            opacity: 0.18
+            color: "#11111b"
+            opacity: 0.45
             anchors.centerIn: config.FullBlur == "true" ? parent : form
             visible: config.FullBlur == "true" || config.PartialBlur == "true" ? true : false
         }
