@@ -31,7 +31,9 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg, jxl-pixbuf-loader
-output * bg /usr/share/backgrounds/default.jxl fill
+output DP-1 bg /home/connor/Pictures/wallpapers/background.jpg fill
+output DP-2 bg /home/connor/Pictures/wallpapers/background.jpg fill
+
 #
 # Example configuration:
 #
@@ -41,16 +43,8 @@ output * bg /usr/share/backgrounds/default.jxl fill
 
 ### Idle configuration
 #
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
+# Locking is handled by ~/.config/sway/config.d/90-swayidle.conf
+# (gtklock, overrides the system swaylock default).
 
 ### Input configuration
 #
@@ -226,3 +220,18 @@ bindsym $mod+r mode "resize"
 # the trick, it's all in the `wordexp(3)`.
 #
 include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "/etc/sway/config.d/*.conf" "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf")'
+# Take a cropped screenshot with Super + Shift + S
+bindsym $mod+Shift+s exec grimshot copy area
+for_window [class="net-runelite-launcher-Launcher"] inhibit_idle focus
+# Enforce strict render pacing to eliminate screen tearing during resizing
+output * max_render_time 1
+# Instantly focus RuneLite by its XWayland class name using a single keybinding (e.g., Mod + G)
+bindsym $mod+g [class="net-runelite-launcher-Launcher"] focus
+# Force RuneLite to stay contained to the current output when fullscreened
+for_window [app_id="runelite"] inhibit_idle fullscreen
+for_window [title="RuneLite"] inhibit_idle fullscreen
+
+# Prevent floating/untiled windows from escaping current workspace output bounds
+for_window [app_id="runelite"] move container to workspace current
+for_window [title="RuneLite"] move container to workspace current
+exec ~/.local/bin/game-sleep-inhibitor.sh

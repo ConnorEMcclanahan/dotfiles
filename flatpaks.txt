@@ -1,6 +1,10 @@
-com.discordapp.Discord
-com.ktechpit.whatsie
-com.spotify.Client
-com.valvesoftware.Steam
-dev.zed.Zed
-io.gitlab.librewolf-community
+Discord	com.discordapp.Discord	1.0.161	stable	system
+Whatsie	com.ktechpit.whatsie	6.1.1	stable	user
+Spotify	com.spotify.Client	1.2.95.453.g0eeebbed	stable	system
+Bottles	com.usebottles.bottles	67.4	stable	user
+Steam	com.valvesoftware.Steam	1.0.0.87	stable	system
+Zed	dev.zed.Zed	v1.22.0	stable	system
+LibreWolf	io.gitlab.librewolf-community	157.0-1	stable	system
+Lutris	net.lutris.Lutris	0.5.22	stable	user
+Blender	org.blender.Blender	5.2	stable	user
+Godot Engine	org.godotengine.Godot	4.7.2	stable	user

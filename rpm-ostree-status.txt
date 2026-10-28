@@ -4,10 +4,22 @@ Deployments:
                   Version: 44.1.7 (2026-04-22T13:26:05Z)
                BaseCommit: 6618725a29248785d4eceeaeefd8920b35862f15bd74d393856039c34f043e9a
              GPGSignature: Valid signature by 36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6
-          LayeredPackages: alacritty btop cliphist distrobox fuzzel git micro pamixer
+          LayeredPackages: 'gcc-c++' alacritty btop cairo-devel cliphist cmake distrobox
+                           fuse fuzzel git gtklock hyprgraphics-devel hyprlang-devel
+                           hyprutils-devel libdrm-devel libxkbcommon-devel
+                           mesa-libEGL-devel mesa-libgbm-devel mesa-libGLES-devel micro
+                           pam-devel pamixer pango-devel pugixml-devel qt6-qt5compat
+                           qt6-qtdeclarative-static qt6-qtquick3d qt6-qtsvg-devel
+                           steam-devices wayland-devel wayland-protocols-devel zenity
 
   fedora:fedora/44/x86_64/sericea
                   Version: 44.1.7 (2026-04-22T13:26:05Z)
                BaseCommit: 6618725a29248785d4eceeaeefd8920b35862f15bd74d393856039c34f043e9a
              GPGSignature: Valid signature by 36F612DCF27F7D1A48A835E4DBFCF71C6D9F90A6
-          LayeredPackages: cliphist fuzzel git pamixer
+          LayeredPackages: 'gcc-c++' alacritty btop cairo-devel cliphist cmake distrobox
+                           fuse fuzzel git gtklock hyprgraphics-devel hyprlang-devel
+                           hyprutils-devel libdrm-devel libxkbcommon-devel
+                           mesa-libEGL-devel mesa-libgbm-devel mesa-libGLES-devel micro
+                           pam-devel pamixer pango-devel pugixml-devel qt6-qt5compat
+                           qt6-qtdeclarative-static qt6-qtquick3d qt6-qtsvg-devel
+                           wayland-devel wayland-protocols-devel zenity

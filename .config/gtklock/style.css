@@ -1,0 +1,20 @@
+window {
+    background-image: url("/home/connor/Pictures/wallpapers/background.jpg");
+    background-size: cover;
+}
+
+/* The rectangular password input box */
+entry {
+    background-color: rgba(17, 17, 27, 0.9);
+    border: 2px solid #89b4fa;
+    border-radius: 8px;
+    color: #cdd6f4;
+    padding: 12px 20px;
+    font-size: 18px;
+}
+
+/* Wrong password error style */
+entry.error {
+    border-color: #f38ba8;
+    background-color: rgba(243, 139, 168, 0.2);
+}
