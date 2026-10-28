@@ -6,7 +6,7 @@ Personal dotfiles and UI design for **Fedora Atomic (Sway edition)** — a Catpp
 
 | Desktop | Lock Screen | Login Screen |
 |---------|-------------|--------------|
-| ![Desktop](screenshots/desktop.png) | ![Lock](screenshots/lock.png) | ![Login](screenshots/login.png) |
+| ![Desktop](screenshots/desktop-waybar.png) | ![Lock](screenshots/lock.png) | ![Login](screenshots/login.png) |
 
 ## What's inside
 
