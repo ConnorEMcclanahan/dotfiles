@@ -11,7 +11,7 @@ window {
 
 #clock-label { color: white; }
 #date-label { color: white; }
-#input-label { color: #e8eaf2; }
+#input-label { opacity: 0; font-size: 0; padding: 0; margin: 0; }
 
 /* The rectangular password input box */
 entry {
