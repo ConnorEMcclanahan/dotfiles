@@ -9,6 +9,9 @@ window {
     padding: 24px 48px;
 }
 
+#clock-label { color: white; }
+#date-label { color: white; }
+
 /* The rectangular password input box */
 entry {
     background-color: rgba(17, 17, 27, 0.9);
